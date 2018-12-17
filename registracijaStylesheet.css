@@ -1,0 +1,82 @@
+
+section{
+margin-left: 2em;
+line-height: 2.5em;
+}
+
+.header{
+margin: 1em 0em;
+border-bottom: 3px solid #343a40;
+}
+
+h1{
+font-weight: 400;
+text-transform: uppercase;
+padding-left: 0.5em;
+font-size: 3.5em;
+font-stretch: 150%;
+}
+
+.form-control{
+border: 2px solid #777;
+border-radius: 0;
+height: auto;
+line-height: 2.5em;
+}
+
+h2{
+font-size: 2.5em;
+}
+
+label, .col-form-label{
+font-size: 2em;
+}
+
+#gridCheck1{
+width: 2.2em;
+height: 2.2em;
+}
+
+.form-check-label {
+margin: 0 0 0 20px;
+}
+
+a{
+color: #0056b3;
+text-decoration: underline;
+}
+
+.select-field{
+height: 1.5em;
+}
+
+#exampleFormControlSelect1, #exampleFormControlSelect2{
+box-sizing: border-box;
+margin-left: 16px;
+border-radius: 20px;
+}
+
+.col-to-left{
+padding-left: 0;
+}
+
+#post-code-search{
+font-size: 1.4em;
+margin: 10px 0 0 -10px;
+}
+
+label p{
+font-size: 0.8em;
+color: #888;
+}
+
+#prasymas{
+font-size: 1.5em;
+color: #888;
+}
+
+.mb-3{
+font-size: 1.8em;
+background-color: #888;
+border: none;
+}
