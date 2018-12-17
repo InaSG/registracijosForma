@@ -19,23 +19,25 @@
         </div>
 
         <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-4 col-form-label">El. pašto adresas: </label>
+            <label for="inputEmail3" class="col-sm-4 col-form-label">El. pašto adresas: <span style="color: red">*</span>
+            </label>
             <div class="col-sm-6">
-                <input type="email" class="form-control" id="inputEmail3">
+                <input type="email" class="form-control" id="inputEmail3" required pattern=".*@.*[.].*" required>
             </div>
             <div class="col-sm-2"></div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">Slaptažodis: </label>
+            <label for="inputPassword3" class="col-sm-4 col-form-label">Slaptažodis: <span style="color: red">*</span>
+            </label>
             <div class="col-sm-6">
-                <input type="password" class="form-control" id="inputPassword3">
+                <input type="password" class="form-control" id="inputPassword3" minlength="8" required >
                 <div class="col-sm-2"></div>
             </div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">Patvirtinti slaptažodį: </label>
+            <label for="inputPassword3" class="col-sm-4 col-form-label">Patvirtinti slaptažodį: <span style="color: red">*</span></label>
             <div class="col-sm-6">
-                <input type="password" class="form-control" id="inputPassword32">
+                <input type="password" class="form-control" id="inputPassword32" minlength="6" required>
                 <div class="col-sm-2"></div>
             </div>
         </div>
@@ -54,31 +56,34 @@
             <h2 class="col-sm-6">Pasitikrinkite sąskaitos adresą</h2>
         </div>
         <div class="form-group row">
-            <label for="exampleFormControlSelect1" class="col-sm-4 col-form-label  select-field">Lytis</label>
-            <select class="form-control form-control-lg col-sm-6" id="exampleFormControlSelect1">
+            <label for="exampleFormControlSelect1" class="col-sm-4 col-form-label  select-field">Lytis <span style="color: red">*</span>
+            </label>
+            <select class="form-control form-control-lg col-sm-6" id="exampleFormControlSelect1" required>
+                <option> </option>
                 <option>Moteris</option>
                 <option>Vyras</option>
             </select>
             <div class="col-sm-2"></div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">Vardas: </label>
+            <label for="inputPassword3" class="col-sm-4 col-form-label">Vardas: <span style="color: red">*</span></label>
             <div class="col-sm-6">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" required pattern="[A-Za-z]*" required>
                 <div class="col-sm-2"></div>
             </div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">Pavardė: </label>
+            <label for="inputPassword3" class="col-sm-4 col-form-label">Pavardė: <span style="color: red">*</span></label>
             <div class="col-sm-6">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" required pattern="[A-Za-z]*" required>
                 <div class="col-sm-2"></div>
             </div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">Gatvė, namo (buto) nr.: </label>
+            <label for="inputPassword3" class="col-sm-4 col-form-label">Gatvė, namo (buto) nr.: <span style="color: red">*</span>
+            </label>
             <div class="col-sm-4">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" required>
             </div>
             <div class="col-sm-2 col-to-left">
                 <input type="text" class="form-control">
@@ -86,9 +91,9 @@
             <div class="col-sm-2"></div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">Pašto kodas: </label>
+            <label for="inputPassword3" class="col-sm-4 col-form-label">Pašto kodas: <span style="color: red">*</span></label>
             <div class="col-sm-4">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" required>
             </div>
             <div class="col-sm-4" id="post-code-search">
                 <p><a href="https://www.post.lt/lt/pagalba/pasto-kodu-paieska?search_type=address&street_id=
@@ -96,16 +101,17 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">Miestas: </label>
+            <label for="inputPassword3" class="col-sm-4 col-form-label">Miestas: <span style="color: red">*</span></label>
             <div class="col-sm-4">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" required>
                 <div class="col-sm-4"></div>
             </div>
         </div>
         <div class="form-group row">
-            <label for="exampleFormControlSelect2" class="col-sm-4 col-form-label select-field">Šalis</label>
-            <select class="form-control form-control-lg col-sm-6" id="exampleFormControlSelect2">
-                <option> - </option>
+            <label for="exampleFormControlSelect2" class="col-sm-4 col-form-label select-field">Šalis <span style="color: red">*</span>
+            </label>
+            <select class="form-control form-control-lg col-sm-6" id="exampleFormControlSelect2" required>
+                <option>  </option>
                 <option>Lietuva</option>
                 <option>Latvija</option>
                 <option>Estija</option>
@@ -119,9 +125,10 @@
             <div class="col-sm-2"></div>
         </div>
         <div class="form-group row">
-            <label for="inputTelNr" class="col-sm-4 col-form-label">Telefonas: </label>
+            <label for="inputTelNr" class="col-sm-4 col-form-label">Telefonas: <span style="color: red">*</span></label>
             <div class="col-sm-6">
-                <input type="text" class="form-control" id="inputTelNr" required>
+                <input type="text" class="form-control" id="inputTelNr" required pattern
+                        ="[0-9]*[-]*[0-9]*[-]*[0-9]*[-]*[0-9]*[-]*[0-9]*" required>
                 <div class="col-sm-2"></div>
             </div>
         </div>
@@ -135,7 +142,7 @@
         <div class="form-group row">
             <div class="col-sm-4"></div>
             <div class="col-sm-6">
-                <p id="prasymas">Prašome užpildyti visus pažymėtus laukus</p>
+                <p class= "id="prasymas">Prašome užpildyti visus pažymėtus laukus <span style="color: red">*</span></p>
             </div>
             <div class="col-sm-2"></div>
         </div>
